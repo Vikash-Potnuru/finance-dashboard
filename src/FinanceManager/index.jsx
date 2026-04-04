@@ -156,13 +156,13 @@ class FinanceManager extends Component {
     )
 
     return (
-      <div className={"appContainer"}>
-        <div className={"responsiveContainer"}>
-          <div className={"headerContainer"}>
-            <h1 className={"heading"}>Hi, Vikash Potnuru</h1>
-            <p className={"headerContent"}>
+      <div className="appContainer">
+        <div className="responsiveContainer">
+          <div className="headerContainer">
+            <h1 className="heading">Hi, Vikash Potnuru</h1>
+            <p className="headerContent">
               Welcome back to your
-              <span className={"moneyManagerText"}> Finance Manager</span>
+              <span className="moneyManagerText"> Finance Manager</span>
             </p>
           </div>
           <MoneyDetails
@@ -170,10 +170,10 @@ class FinanceManager extends Component {
             incomeAmount={incomeAmount}
             expensesAmount={expensesAmount}
           />
-          <div className={"transactionDetails"}>
-            <form className={"transactionForm"} onSubmit={this.onAddTransaction}>
-              <h1 className={"transactionHeader"}>Add Transaction</h1>
-              <label className={"inputLabel"} htmlFor="title">
+          <div className="transactionDetails">
+            <form className="transactionForm" onSubmit={this.onAddTransaction}>
+              <h1 className="transactionHeader">Add Transaction</h1>
+              <label className="inputLabel" htmlFor="title">
                 TITLE
               </label>
               <input
@@ -181,28 +181,28 @@ class FinanceManager extends Component {
                 id="title"
                 value={titleInput}
                 onChange={this.onChangeTitleInput}
-                className={"input"}
+                className="input"
                 placeholder="TITLE"
               />
-              {titleError && <p className={"errorMessage"}>Please enter the valid title</p>}
-              <label className={"inputLabel"} htmlFor="amount">
+              {titleError && <p className="errorMessage">Please enter the valid title</p>}
+              <label className="inputLabel" htmlFor="amount">
                 AMOUNT
               </label>
               <input
                 type="text"
                 id="amount"
-                className={"input"}
+                className="input"
                 value={amountInput}
                 onChange={this.onChangeAmountInput}
                 placeholder="AMOUNT"
               />
-              {amountError && <p className={"errorMessage"}>Please enter the valid amount</p>}
-              <label className={"inputLabel"} htmlFor="select">
+              {amountError && <p className="errorMessage">Please enter the valid amount</p>}
+              <label className="inputLabel" htmlFor="select">
                 TYPE
               </label>
               <select
                 id="select"
-                className={"input"}
+                className="input"
                 value={optionId}
                 onChange={this.onChangeOptionId}
               >
@@ -212,19 +212,19 @@ class FinanceManager extends Component {
                   </option>
                 ))}
               </select>
-              <button type="submit" className={"button"}>
+              <button type="submit" className="button">
                 Add
               </button>
             </form>
-            <div className={"historyTransactions"}>
-              <h1 className={"transactionHeader"}>History</h1>
-              <input type="search" className={"searchInputCss"} placeholder="Search" onChange={this.onSearch} />
-              <div className={"transactionsTableContainer"}>
-                <ul className={"transactionsTable"}>
-                  <li className={"tableHeader"}>
-                    <p className={"tableHeaderCell"}>Title</p>
-                    <p className={"tableHeaderCell"}>Amount</p>
-                    <p className={"tableHeaderCell"}>Type</p>
+            <div className="historyTransactions">
+              <h1 className="transactionHeader">History</h1>
+              <input type="search" className="searchInputCss" placeholder="Search" onChange={this.onSearch} />
+              <div className="transactionsTableContainer">
+                <ul className="transactionsTable">
+                  <li className="tableHeader">
+                    <p className="tableHeaderCell">Title</p>
+                    <p className="tableHeaderCell">Amount</p>
+                    <p className="tableHeaderCell">Type</p>
                   </li>
                   {searchResults.map(eachTransaction => (
                     <TransactionItem

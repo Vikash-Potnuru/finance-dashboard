@@ -9,19 +9,19 @@ const TransactionItem = props => {
   }
 
   return (
-    <li className={"tableRow"}>
-      <p className={"transactionText"}>{title}</p>
-      <p className={"transactionText"}>Rs {amount}</p>
-      <p className={"transactionText"}>{type}</p>
-      <div className={"deleteContainer"}>
+    <li className="tableRow">
+      <p className="transactionText">{title}</p>
+      <p className="transactionText">Rs {amount}</p>
+      <p className="transactionText">{type}</p>
+      <div className="deleteContainer">
         <button
-          className={"deleteButton"}
+          className="deleteButton"
           type="button"
           onClick={onDeleteTransaction}
           data-testid="delete"
         >
           <img
-            className={"deleteImg"}
+            className="deleteImg"
             src="https://assets.ccbp.in/frontend/react-js/money-manager/delete.png"
             alt="delete"
           />
