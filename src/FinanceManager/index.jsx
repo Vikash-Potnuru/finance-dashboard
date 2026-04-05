@@ -159,7 +159,7 @@ class FinanceManager extends Component {
       <div className="appContainer">
         <div className="responsiveContainer">
           <div className="headerContainer">
-            <h1 className="heading">Hi, Vikash Potnuru</h1>
+            <h1 className="heading">Hi, Zorvyn</h1>
             <p className="headerContent">
               Welcome back to your
               <span className="moneyManagerText"> Finance Manager</span>
