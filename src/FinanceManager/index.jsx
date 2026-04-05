@@ -226,13 +226,21 @@ class FinanceManager extends Component {
                     <p className="tableHeaderCell">Amount</p>
                     <p className="tableHeaderCell">Type</p>
                   </li>
-                  {searchResults.map(eachTransaction => (
+                  {transactionsList.length === 0 ? (
+                    <li style={{listStyleType: 'none'}}>
+                    <p className='noTransaction'>No transactions added yet</p>
+                    </li>
+                  ) : searchResults.length === 0 ? (
+                    <li style={{listStyleType: 'none'}}>
+                    <p className='noTransaction'>No transactions found</p>
+                    </li>
+                  ) : (searchResults.map(eachTransaction => (
                     <TransactionItem
                       key={eachTransaction.id}
                       transactionDetails={eachTransaction}
                       deleteTransaction={this.deleteTransaction}
                     />
-                  ))}
+                  )))}
                 </ul>
               </div>
             </div>

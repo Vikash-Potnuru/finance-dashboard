@@ -19,7 +19,8 @@
 .transactionText {
   color: #475569;
   font-family: 'Roboto';
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
   width: 30%;
 }
 
@@ -54,4 +55,12 @@
   .deleteImg {
     margin-right: 24px;
   }
+}
+
+.tableRow {
+  transition: background 0.2s ease;
+}
+
+.tableRow:hover {
+  background-color: #f1f5f9;
 }
